@@ -1,0 +1,15 @@
+package com.example.openshift.demo;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/")
+public class GreetingController {
+
+    @GetMapping("greet")
+    public String greet(){
+        return "Hello Openshift User";
+    }
+}
